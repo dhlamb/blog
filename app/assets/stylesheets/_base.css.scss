@@ -1,21 +1,20 @@
-
 @import "susy";
- 
+
 //if you want to use the buttons plugin
 @import "sassy-buttons"; 
- 
+
 //this is the default number of columns
-$total-columns: 5; 
- 
+$total-columns: 2; 
+
 //width of each column
 $column-width   : 4em; 
- 
+
 //space between columns
 $gutter-width   : 1em; 
- 
+
 //space on the right and left of the grid
 $grid-padding   : $gutter-width;
- 
-//alternative layout breakpoints
-$tablet: 8;
-$computer: 55em 12;
+
+//alternative layout sizes
+$tablet:3;
+$computer:4;
