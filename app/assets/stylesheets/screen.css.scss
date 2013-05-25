@@ -1,46 +1,49 @@
 @import "base";
 
 .container{
-  @include container($total-columns, $tablet, $computer);
+  @include container($total-columns, $tablet, $desktop);//, $tablet);
   @include susy-grid-background;
   #header{
-    text-align:center;
+    text-align: center;
   }
   #navbar{
-    text-align:center;
-  }
-  #content{
-    text-align:center;
-  }
-  #ads{
-    text-align:center;
+    text-align: center;
   }
 }
 
 @include at-breakpoint($tablet){
   .container{
+    @include susy-grid-background;
     #navbar{
-      @include span-columns(1, 3)
+      @include span-columns(2, $tablet);
     }
     #content{
-      @include span-columns(2 omega, 3)
-    }
-    #ads{
-      @include span-columns(2 omega, 3)
+      @include span-columns(6 omega, $tablet);
     }
   }
 }
 
-@include at-breakpoint($computer){
+@include at-breakpoint($desktop){
   .container{
+    @include susy-grid-background;
     #navbar{
-      @include span-columns(1, 3)
+      @include span-columns(4, $desktop);
     }
     #content{
-      @include span-columns(1, 3)
-    }
-    #ads{
-      @include span-columns(1 omega, 3)
+      @include span-columns(8 omega, $desktop);
     }
   }
 }
+/*@include at-breakpoint($computer){*/
+  /*.container{*/
+    /*#navbar{*/
+      /*@include span-columns(2, 12)*/
+    /*}*/
+    /*#content{*/
+      /*@include span-columns(5, 12)*/
+    /*}*/
+    /*#ads{*/
+      /*@include span-columns(5 omega, 12)*/
+    /*}*/
+  /*}*/
+/*}*/
