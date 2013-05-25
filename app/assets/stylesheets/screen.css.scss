@@ -1,0 +1,51 @@
+@import "base";
+ 
+    body{ 
+       background:#F7F3E8; 
+       a{ text-decoration: none; }
+       .container{
+            @include container($total-columns, $tablet, $computer);
+            #header{
+               font-weight: 700;
+               font-size: 72px;
+               span{
+                  font-weight: 300;
+                  font-size: 18px;
+                  display: block;
+               }
+            }
+            #controls{
+               #buttons{
+                  margin-bottom: 5px;
+                  #phonebook{ @include sassy-button("simple", 6px, 14px, #337EC4); }
+                  #newguest{
+                     margin-top: 5px;
+                     @include sassy-button("simple", 6px, 14px, #D93131);
+                  }
+               }  
+            }
+            table{
+               width:100%;
+               thead{
+                  color: #FEFEFE;
+                  background: #000;
+                  th{
+                     text-align: left;
+                     font-weight:500;
+                     padding:10px;
+                  }
+               }
+               tbody{ 
+                  border: 3px solid #000; 
+                  tr{ background: #E5E5E5; }
+                  tr.alt{ background: #EEEEEE; }
+                  .buttoncell{
+                     .confirm{ @include sassy-button("simple", 6px, 14px, #F39B06); }
+                     .unconfirm{ @include sassy-button("flat", 6px, 14px, #3BA06F); }
+                  }
+               }
+               .email{ display: none; }
+               .phone{ display: none; }
+            }
+        }
+    }

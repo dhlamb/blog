@@ -19,6 +19,11 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  
+  gem 'compass', '>= 0.12.2'
+  gem 'compass-rails', '>=1.0.3'
+  gem 'susy'
+  gem 'sassy-buttons'
 end
 
 gem 'jquery-rails'
