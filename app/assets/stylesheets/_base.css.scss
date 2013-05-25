@@ -4,17 +4,17 @@
 @import "sassy-buttons"; 
 
 //this is the default number of columns
-$total-columns: 2; 
+$total-columns: 3; 
 
 //width of each column
-$column-width   : 4em; 
+$column-width   : 30em; 
 
 //space between columns
-$gutter-width   : 1em; 
+$gutter-width   : 5em; 
 
 //space on the right and left of the grid
 $grid-padding   : $gutter-width;
 
 //alternative layout sizes
-$tablet:3;
-$computer:4;
+$tablet:40em;
+$computer:60em;

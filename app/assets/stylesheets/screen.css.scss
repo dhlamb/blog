@@ -2,33 +2,41 @@
 
 .container{
   @include container($total-columns, $tablet, $computer);
+  @include susy-grid-background;
   #header{
-
   }
   #navbar{
-
   }
   #content{
-  
   }
   #ads{
-
   }
 }
 
-/*@include at-breakpoint($tablet){*/
-  /*.container{*/
-    /*#header{*/
-      /*@include span-columns(2)*/
-    /*}*/
-    /*#navbar{*/
-      /*@include span-columns(1)*/
-    /*}*/
-    /*#content{*/
-      /*@include span-columns(1 omega)*/
-    /*}*/
-    /*#content{*/
-      /*@include span-columns(1 omega)*/
-    /*}*/
-  /*}*/
-/*}*/
+@include at-breakpoint($tablet){
+  .container{
+    #navbar{
+      @include span-columns(1, 3)
+    }
+    #content{
+      @include span-columns(2 omega, 3)
+    }
+    #ads{
+      @include span-columns(2 omega, 3)
+    }
+  }
+}
+
+@include at-breakpoint($computer){
+  .container{
+    #navbar{
+      @include span-columns(1, 3)
+    }
+    #content{
+      @include span-columns(1, 3)
+    }
+    #ads{
+      @include span-columns(1 omega, 3)
+    }
+  }
+}
