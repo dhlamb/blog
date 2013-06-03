@@ -7,14 +7,14 @@
 $total-columns: 3; 
 
 //width of each column
-$column-width   : 30em; 
+$column-width   : 100em; 
 
 //space between columns
-$gutter-width   : 5em; 
+$gutter-width   : 2em; 
 
 //space on the right and left of the grid
-$grid-padding   : $gutter-width;
+$grid-padding   : 1em;
 
 //alternative layout sizes
-$tablet:40em;
-$computer:60em;
+$tablet:50em;
+$computer:100em;
