@@ -4,12 +4,16 @@
   @include container($total-columns, $tablet, $computer);
   @include susy-grid-background;
   #header{
+    text-align:center;
   }
   #navbar{
+    text-align:center;
   }
   #content{
+    text-align:center;
   }
   #ads{
+    text-align:center;
   }
 }
 
